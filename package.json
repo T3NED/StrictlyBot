@@ -1,0 +1,11 @@
+{
+  "name": "strictly-bot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/T3NED/StrictlyBot.git",
+  "license": "Apache-2.0",
+  "private": true,
+  "_moduleAliases": {
+    "#lib": "dist/lib"
+  }
+}
