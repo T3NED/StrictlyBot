@@ -7,7 +7,9 @@ const requiredEnvVariables: string[] = [
   "POSTGRESQL_URI",
   "REDIS_URI",
 
-  "PREFIX"
+  "PREFIX",
+
+  "LOBBY_CATEGORY_CHANNEL"
 ];
 
 // Ensure required env variable are loaded.
@@ -26,6 +28,7 @@ declare global {
       POSTGRESQL_URI: string;
       REDIS_URI: string;
       PREFIX: string;
+      LOBBY_CATEGORY_CHANNEL: string;
     }
   }
 }
@@ -40,3 +43,7 @@ export const uri = {
 };
 
 export const prefix = process.env.PREFIX;
+
+export const channels = {
+  lobbyCategory: process.env.LOBBY_CATEGORY_CHANNEL
+};
