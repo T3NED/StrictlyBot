@@ -5,8 +5,12 @@
   "repository": "https://github.com/T3NED/StrictlyBot.git",
   "license": "Apache-2.0",
   "private": true,
+  "dependencies": {
+    "@prisma/client": "^3.3.0"
+  },
   "devDependencies": {
     "@types/node": "^16.11.4",
+    "prisma": "^3.3.0",
     "typescript": "^4.4.4"
   },
   "_moduleAliases": {
