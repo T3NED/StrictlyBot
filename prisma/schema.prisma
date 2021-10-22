@@ -6,3 +6,21 @@ datasource db {
   provider = "postgresql"
   url      = env("POSTGRESQL_URI")
 }
+
+model Lobby {
+  id String @id @default(uuid()) @db.Uuid
+
+  active Boolean @db.Boolean
+  title String? @db.VarChar(50)
+
+  ownerId   String @map("owner_id") @db.VarChar(20)
+  channelId String @map("channel_id") @db.VarChar(20)
+  messageId String @map("message_id") @db.VarChar(20)
+
+  participantIds   String[] @map("participant_ids")
+  participantLimit Int      @map("participant_limit") @db.SmallInt
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamp
+
+  @@map("lobbies")
+}
