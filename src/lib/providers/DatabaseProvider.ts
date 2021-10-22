@@ -1,4 +1,4 @@
-import { DatabaseLog, config } from "#lib";
+import { DatabaseHelper, DatabaseLog, config } from "#lib";
 import { PrismaClient } from "@prisma/client";
 import { performance } from "perf_hooks";
 
@@ -7,6 +7,11 @@ export class DatabaseProvider {
    * The PrismaClient instance.
    */
   public client: PrismaClient;
+
+  /**
+   * The database helper methods.
+   */
+  public helpers = new DatabaseHelper(this);
 
   public constructor() {
     const client = new PrismaClient({
