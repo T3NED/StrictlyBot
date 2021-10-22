@@ -7,7 +7,9 @@
   "private": true,
   "dependencies": {
     "@prisma/client": "^3.3.0",
-    "ioredis": "^4.28.0"
+    "dotenv": "^10.0.0",
+    "ioredis": "^4.28.0",
+    "module-alias": "^2.2.2"
   },
   "devDependencies": {
     "@types/ioredis": "^4.27.8",
