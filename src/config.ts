@@ -5,7 +5,9 @@ const requiredEnvVariables: string[] = [
 
   "DISCORD_URI",
   "POSTGRESQL_URI",
-  "REDIS_URI"
+  "REDIS_URI",
+
+  "PREFIX"
 ];
 
 // Ensure required env variable are loaded.
@@ -23,6 +25,7 @@ declare global {
       DISCORD_URI: string;
       POSTGRESQL_URI: string;
       REDIS_URI: string;
+      PREFIX: string;
     }
   }
 }
@@ -35,3 +38,5 @@ export const uri = {
   postgresql: process.env.POSTGRESQL_URI,
   redis: process.env.REDIS_URI
 };
+
+export const prefix = process.env.PREFIX;
