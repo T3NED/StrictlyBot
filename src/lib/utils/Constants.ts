@@ -4,3 +4,5 @@ export enum Colors {
   Warning = 0xf5b426,
   Error = 0xf45b69
 }
+
+export const ParticipantLimit: number = 5;
