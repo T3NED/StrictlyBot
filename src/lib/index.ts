@@ -1,5 +1,6 @@
 // Config
 export * as config from "../config";
+export * as consts from "./utils/Constants";
 
 // Errors
 export * from "./errors/MissingEnvVariableError";
