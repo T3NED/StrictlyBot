@@ -13,6 +13,8 @@ export * from "./providers/RedisProvider";
 
 // Struct
 export * from "./struct/Embed";
+export * from "./struct/SequentialQueue";
+export * from "./struct/Client";
 
 // Utils
 export * from "./utils/Logger";
